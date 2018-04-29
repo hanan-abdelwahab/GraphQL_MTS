@@ -31,7 +31,7 @@ namespace HR.GraphQL
                  new HR.Models.Employee()
                 {
                     Id="3",
-                    Name="Fotouh"
+                    Name="Fotouh1233121"
 
                 }
             };
