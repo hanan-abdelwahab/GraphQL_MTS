@@ -39,6 +39,7 @@ namespace HR.GraphQL
 
             var schema = GraphQL<HR.Logic.HRContext>.CreateDefaultSchema(() => data);
             schema.AddType<Employee>().AddAllFields();
+            //
             schema.AddListField("Employees", (db) => db.Employees.AsQueryable());
             schema.Complete();
             GraphQL = new GraphQL<HR.Logic.HRContext>(schema);
