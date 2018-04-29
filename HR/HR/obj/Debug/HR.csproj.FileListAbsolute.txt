@@ -37,6 +37,5 @@ D:\Trials\MyGit\MTS\HR\HR\bin\System.Web.WebPages.xml
 D:\Trials\MyGit\MTS\HR\HR\bin\System.Web.WebPages.Deployment.xml
 D:\Trials\MyGit\MTS\HR\HR\bin\System.Web.WebPages.Razor.xml
 D:\Trials\MyGit\MTS\HR\HR\bin\Antlr3.Runtime.pdb
-D:\Trials\MyGit\MTS\HR\HR\obj\Debug\HR.csprojResolveAssemblyReference.cache
 D:\Trials\MyGit\MTS\HR\HR\obj\Debug\HR.dll
 D:\Trials\MyGit\MTS\HR\HR\obj\Debug\HR.pdb
