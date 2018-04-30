@@ -13,6 +13,7 @@ namespace HR.GraphQL
         public HRGraphSchema()
         {
 
+            #region Data
             var data = new HR.Logic.HRContext();
             data.Employees = new List<Employee>{
 
@@ -31,17 +32,24 @@ namespace HR.GraphQL
                  new HR.Models.Employee()
                 {
                     Id="3",
-                    Name="Fotouh1233121"
+                    Name="Fotouh"
 
                 }
-            };
+            }; 
+            #endregion
 
-
+            //Create DefaultSchema from All returned objects
             var schema = GraphQL<HR.Logic.HRContext>.CreateDefaultSchema(() => data);
+           
+
+            //Add single types to schema
             schema.AddType<Employee>().AddAllFields();
-            //
+           
+            //Add fields (the query functions) to schema
             schema.AddListField("Employees", (db) => db.Employees.AsQueryable());
             schema.Complete();
+
+            //assign schema to GraphQL object
             GraphQL = new GraphQL<HR.Logic.HRContext>(schema);
 
         }

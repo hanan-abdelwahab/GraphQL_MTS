@@ -9,5 +9,6 @@ namespace HR.Logic
     {
         public List<Employee> Employees { get; set; }
         public List<Department> Departments { get; set; }
+    
     }
 }
